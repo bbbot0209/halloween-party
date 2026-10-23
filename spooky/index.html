@@ -3,207 +3,417 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Dead of Night — Halloween Party Plan · Sat Oct 31</title>
-<meta name="description" content="Spooky themes, decor, a shopping list, and a Martha Stewart–inspired menu for a Halloween party.">
-<meta name="theme-color" content="#0B0908">
+<title>Haunted Manor — Costume Contest · Sat Oct 31, 7 PM</title>
+<meta name="description" content="Haunted Manor: a Halloween costume contest. The plan — theme, decor, shopping, menu, and prep.">
+<meta name="theme-color" content="#1C0606">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0B0908;      /* page */
-    --velvet:#141010;   /* cards */
-    --wine:#2A0A10;     /* hero glow */
-    --oxblood:#6E1626;  /* rules, fills */
-    --bone:#EEE6D6;     /* body text */
-    --ash:#A89E8E;      /* secondary text */
-    --gold:#C8AE7D;     /* champagne accent */
-    --rose:#C9A3A0;     /* whisper of dusty pink */
-    --line:rgba(200,174,125,.18);
-    --line2:rgba(200,174,125,.34);
-    --display:"Bodoni Moda", "Didot", "Times New Roman", serif;
-    --body:"Jost", "Futura", system-ui, sans-serif;
+    --bg:#1C0606;       /* oxblood black (center of the invite background) */
+    --edge:#430707;     /* oxblood red (invite background edges) */
+    --card:rgba(255,255,255,.05);
+    --card2:rgba(255,255,255,.08);
+    --line:rgba(255,255,255,.10);
+    --line2:rgba(255,255,255,.24);
+    --text:#FFFFFF;
+    --soft:rgba(255,255,255,.82);
+    --mute:rgba(255,255,255,.62);
+    --blood:#9A2222;    /* rules + small fills */
+    --ember:#EDAE8A;    /* the warm glow of the invite's RSVP orbs */
+    --display:"DM Serif Display", "Goodman", "Times New Roman", serif;
+    --body:"Inter", "Helvetica Neue", Helvetica, system-ui, sans-serif;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-  body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--body);font-weight:400;font-size:17px;line-height:1.5;
-    background-image:radial-gradient(140% 60% at 50% 0%, rgba(110,22,38,.16), transparent 60%)}
-  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-  a{color:var(--gold)}
-  :focus-visible{outline:1.5px solid var(--gold);outline-offset:3px}
-  .label{font-family:var(--body);font-size:11.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+  body{margin:0;color:var(--text);font-family:var(--body);font-weight:400;font-size:16.5px;line-height:1.5;background:transparent;position:relative}
+  /* fixed oxblood backdrop: dark center, red edges, faint vertical grain */
+  body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+    background:
+      repeating-linear-gradient(90deg, rgba(0,0,0,.10) 0 1px, transparent 1px 9px),
+      linear-gradient(90deg, var(--edge) 0%, var(--bg) 26%, var(--bg) 74%, var(--edge) 100%)}
+  a{color:var(--ember)}
+  :focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:6px}
 
-  /* ---------- hero: an engraved invitation ---------- */
-  .hero{position:relative;overflow:hidden;padding:18px 14px 0;
-    background:radial-gradient(90% 70% at 50% 38%, var(--wine) 0%, rgba(42,10,16,.4) 45%, transparent 75%)}
-  .hero-in{position:relative;max-width:1080px;margin:0 auto;text-align:center;padding:40px 18px 34px;
-    border:1px solid var(--line2);outline:1px solid var(--line);outline-offset:-7px}
-  .hero-in::before,.hero-in::after{content:"";position:absolute;width:7px;height:7px;background:var(--gold);transform:rotate(45deg);left:50%;margin-left:-3.5px}
-  .hero-in::before{top:-4px}
-  .hero-in::after{bottom:-4px}
-  .hero .eyebrow{position:relative;margin:0;color:var(--gold);font-size:11.5px;font-weight:500;letter-spacing:.32em;text-transform:uppercase}
-  .flame{position:relative;width:14px;height:44px;margin:26px auto 0}
-  .flame::before{content:"";position:absolute;left:50%;top:0;width:12px;height:24px;margin-left:-6px;border-radius:50% 50% 50% 50%/62% 62% 38% 38%;
-    background:radial-gradient(circle at 50% 72%, #FFF4DC 0%, #F1D08F 38%, rgba(200,120,60,.7) 70%, transparent 100%);
-    box-shadow:0 0 22px 8px rgba(241,208,143,.22),0 0 70px 30px rgba(200,140,80,.10);animation:flicker 3.4s ease-in-out infinite;transform-origin:50% 90%}
-  .flame::after{content:"";position:absolute;left:50%;top:26px;width:1.5px;height:18px;margin-left:-.75px;background:linear-gradient(var(--ash),transparent)}
-  @keyframes flicker{0%,100%{transform:scale(1,1) rotate(0)}30%{transform:scale(.94,1.06) rotate(-2deg)}55%{transform:scale(1.04,.96) rotate(1.5deg)}80%{transform:scale(.97,1.03) rotate(-1deg)}}
-  .bats{position:absolute;right:6px;top:18px;width:84px;opacity:.5}
-  .bats path{fill:var(--gold);opacity:.35}
-  .bats .b2{animation:flap 4.2s ease-in-out infinite;transform-origin:center}
-  @keyframes flap{50%{transform:translateY(-4px) scaleY(.85)}}
-  .hero h1{position:relative;font-family:var(--display);font-weight:400;line-height:.92;margin:18px 0 0;font-size:clamp(56px,17vw,148px);color:var(--bone);letter-spacing:-.01em}
-  .hero h1 span{display:block;font-style:italic;color:var(--gold);font-weight:400;margin-top:.02em}
-  .hero .when{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;align-items:center;margin:26px 0 0;position:relative}
-  .pill{font-family:var(--body);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--gold);color:var(--gold);background:transparent}
-  .pill.ghost{border-color:var(--line2);color:var(--ash)}
-  .swap{font-family:var(--display);font-style:italic;font-size:16px;color:var(--rose);text-decoration:none;border-bottom:1px solid rgba(201,163,160,.4);display:inline-block;position:relative;margin-top:22px;padding:8px 0 2px;white-space:nowrap}
-  .swap:hover{color:var(--bone);border-color:var(--bone)}
-  .ornament{display:flex;align-items:center;gap:14px;max-width:1080px;margin:26px auto 0;padding:0 30px;color:var(--gold)}
-  .ornament::before,.ornament::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line2))}
-  .ornament::after{background:linear-gradient(90deg,var(--line2),transparent)}
-  .ornament i{width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
+  /* ---------- floating ghosts ---------- */
+  .ghosts{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+  .g{position:absolute;left:0;top:var(--y);width:var(--w);opacity:var(--o);
+     transform:translateX(-40vw);animation:drift var(--d) linear var(--dl) infinite}
+  .g svg{display:block;width:100%;height:auto;filter:blur(1.6px);animation:bob 5.5s ease-in-out infinite}
+  .g.r{animation-name:drift-r}
+  .g.r svg{transform:scaleX(-1);animation-name:bob-r}
+  @keyframes drift{from{transform:translateX(-40vw)}to{transform:translateX(120vw)}}
+  @keyframes drift-r{from{transform:translateX(120vw)}to{transform:translateX(-40vw)}}
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+  @keyframes bob-r{0%,100%{transform:scaleX(-1) translateY(0) rotate(-2deg)}50%{transform:scaleX(-1) translateY(-14px) rotate(2deg)}}
+  @media(max-width:759px){.g.lg-only{display:none}}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .ghosts{display:none}
+    *{animation:none!important;transition:none!important}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{max-width:820px;margin:0 auto;padding:56px 22px 8px;text-align:center}
+  .eyebrow{margin:0;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+  .hero h1{font-family:var(--display);font-weight:400;line-height:.96;margin:18px 0 0;font-size:clamp(60px,17vw,132px);letter-spacing:-.005em;text-shadow:0 2px 40px rgba(0,0,0,.45)}
+  .hero .sub{font-family:var(--display);font-weight:400;font-size:clamp(30px,8vw,54px);line-height:1.05;margin:8px 0 0}
+  .hero .date{margin:30px 0 0;font-size:26px;font-weight:400;line-height:1.2}
+  .hero .time{margin:4px 0 0;font-size:19px;color:var(--mute)}
+  .hero .blurb{max-width:34ch;margin:22px auto 0;font-size:17px;color:var(--soft);line-height:1.5}
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px 0 0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--body);text-decoration:none;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+  .btn.solid{background:#fff;color:#000}
+  .btn.solid:hover{background:var(--ember)}
+  .btn.line{border:1px solid var(--line2);color:var(--text);background:transparent}
+  .swap{display:inline-block;margin-top:20px;padding:10px 4px;font-size:13.5px;color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line)}
+  .swap:hover{color:var(--text)}
+
+  /* progress */
+  .stage{max-width:820px;margin:34px auto 0;padding:0 18px}
+  .stage ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+  .stage li{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:14px;font-weight:500;color:var(--soft)}
+  .stage li i{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700;background:#fff;color:var(--bg)}
+  .stage li.next{border-color:rgba(237,174,138,.55);color:var(--text);background:rgba(237,174,138,.08)}
+  .stage li.next i{background:transparent;border:1.5px solid var(--ember);color:var(--ember)}
+  @media(min-width:760px){.stage ol{grid-template-columns:repeat(4,1fr)}}
 
   /* ---------- nav ---------- */
-  nav{position:sticky;top:0;z-index:5;margin-top:18px;background:rgba(11,9,8,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  nav ul{list-style:none;margin:0 auto;padding:0 10px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;max-width:1080px}
+  nav{position:sticky;top:0;z-index:5;margin-top:34px;background:rgba(28,6,6,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  nav ul{list-style:none;margin:0 auto;padding:0 8px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;max-width:1080px}
   nav ul::-webkit-scrollbar{display:none}
-  nav a{display:flex;align-items:center;min-height:48px;padding:0 13px;color:var(--bone);text-decoration:none;font-weight:500;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
-  nav a:hover,nav a:active{color:var(--gold);border-bottom-color:var(--gold)}
-  @media(min-width:760px){nav ul{justify-content:center;gap:18px}}
+  nav a{display:flex;align-items:center;min-height:50px;padding:0 13px;color:var(--soft);text-decoration:none;font-weight:500;font-size:14px;white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+  nav a:hover,nav a:active{color:#fff;border-bottom-color:var(--ember)}
+  @media(min-width:760px){nav ul{justify-content:center;gap:14px}}
 
   /* ---------- layout ---------- */
-  main{max-width:1080px;margin:0 auto;padding:8px 18px 48px}
-  section{padding-top:52px;scroll-margin-top:60px}
-  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 0 20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
-  h2{font-family:var(--display);font-weight:400;font-size:42px;line-height:1;margin:0;color:var(--bone);letter-spacing:-.01em}
-  h2 em{font-style:italic;color:var(--gold)}
-  .count{font-family:var(--body);font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ash);white-space:nowrap;font-variant-numeric:tabular-nums;padding-bottom:4px}
-  h3{font-family:var(--body);font-size:11.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
-  .note{font-size:14.5px;font-weight:300;color:var(--ash);margin:-6px 0 22px;max-width:62ch}
+  main{max-width:1080px;margin:0 auto;padding:4px 18px 48px}
+  section{padding-top:56px;scroll-margin-top:60px}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  h2{font-family:var(--display);font-weight:400;font-size:40px;line-height:1.02;margin:0;letter-spacing:-.005em}
+  h2 em{font-style:italic;color:var(--ember)}
+  .count{font-size:12.5px;font-weight:500;color:var(--mute);white-space:nowrap;font-variant-numeric:tabular-nums;padding-bottom:5px}
+  h3{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ember);margin:0 0 10px}
+  .note{font-size:15px;color:var(--mute);margin:-4px 0 20px;max-width:62ch}
   .grid{display:grid;gap:14px;align-content:start}
-  .grid.themes{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
   @media(min-width:760px){
-    body{font-size:17.5px}
+    body{font-size:17px}
     .grid{gap:18px}
     .grid.two{grid-template-columns:1fr 1fr}
     .grid.three{grid-template-columns:repeat(3,1fr)}
-    h2{font-size:64px}
-    section{padding-top:76px}
-    .hero{padding:34px 40px 0}
-    .hero-in{padding:64px 40px 52px}
-    .bats{width:170px;right:9%;top:46px}
-    .flame{margin-top:34px}
-    .hero .when{margin-top:50px}
+    h2{font-size:58px}
+    section{padding-top:80px}
+    .hero{padding-top:88px}
   }
-  .card{background:var(--velvet);border:1px solid var(--line);padding:20px 18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 20px}
 
-  /* themes */
-  .theme{position:relative;padding:22px 18px 20px;background:var(--velvet);border:1px solid var(--line);border-top:2px solid var(--oxblood)}
-  .theme b{display:block;font-family:var(--display);font-style:italic;font-weight:400;font-size:28px;line-height:1.05;margin-bottom:10px;color:var(--bone)}
-  .theme p{margin:0;font-size:15.5px;font-weight:300;color:var(--ash)}
-  .theme:nth-child(4){border-top-color:var(--rose)}
-  .theme:nth-child(4) b{color:var(--rose)}
+  /* theme + contest */
+  .feature{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 22px}
+  .feature::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle, rgba(237,174,138,.16), transparent 70%);pointer-events:none}
+  .feature .big{display:block;font-family:var(--display);font-size:38px;line-height:1.02;margin:0 0 12px}
+  .feature p{margin:0;color:var(--soft);font-size:16.5px;max-width:52ch}
+  .feature .btn{margin-top:22px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .chip{padding:9px 15px;border-radius:999px;border:1px solid var(--line2);font-size:14px;font-weight:500;color:var(--text);background:rgba(255,255,255,.03)}
+  .trophy{font-size:34px;line-height:1;display:block;margin-bottom:12px}
+  @media(min-width:760px){.feature{padding:36px 34px}.feature .big{font-size:48px}}
 
   /* bullet lists */
   ul.dots{list-style:none;margin:0;padding:0}
-  ul.dots li{position:relative;padding:9px 0 9px 22px;border-top:1px solid var(--line);font-size:15.5px;font-weight:300}
+  ul.dots li{position:relative;padding:10px 0 10px 20px;border-top:1px solid var(--line);font-size:15.5px;color:var(--soft)}
   ul.dots li:first-child{border-top:0}
-  ul.dots li::before{content:"";position:absolute;left:3px;top:18px;width:5px;height:5px;border:1px solid var(--gold);transform:rotate(45deg)}
-  ul.dots li small{color:var(--ash)}
+  ul.dots li::before{content:"";position:absolute;left:2px;top:19px;width:6px;height:6px;border-radius:50%;background:var(--blood);box-shadow:0 0 0 2px rgba(154,34,34,.25)}
 
   /* checklist rows */
-  .group{background:var(--velvet);border:1px solid var(--line);padding:18px 14px 6px}
-  .group h3{padding:0 4px;display:flex;justify-content:space-between;align-items:baseline}
-  .group h3 .count{letter-spacing:.14em;padding:0}
+  .group{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 14px 6px}
+  .group h3{padding:0 4px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .group h3 .count{letter-spacing:0;text-transform:none;padding:0}
+  .group.ordered{background:rgba(255,255,255,.035)}
+  .badge{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:#fff;color:var(--bg);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
   ul.check{list-style:none;margin:0;padding:0}
-  ul.check li{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);min-height:62px}
+  ul.check li{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line);min-height:60px}
   ul.check li:first-child{border-top:0}
   ul.check label{flex:1;display:flex;align-items:center;gap:14px;padding:10px 4px;cursor:pointer;min-height:56px}
   ul.check input{position:absolute;opacity:0;width:1px;height:1px}
-  .box{flex:none;width:22px;height:22px;border:1px solid var(--ash);background:transparent;display:grid;place-items:center;transition:background .2s,border-color .2s}
-  .box svg{width:14px;height:14px;opacity:0;stroke:var(--ink)}
-  input:checked + .box{background:var(--gold);border-color:var(--gold)}
+  ul.check input:disabled ~ *{cursor:default}
+  ul.check label:has(input:disabled){cursor:default}
+  .box{flex:none;width:22px;height:22px;border-radius:7px;border:1.5px solid var(--line2);background:transparent;display:grid;place-items:center;transition:background .2s,border-color .2s}
+  .box svg{width:14px;height:14px;opacity:0;stroke:var(--bg)}
+  input:checked + .box{background:var(--ember);border-color:var(--ember)}
+  input:checked:disabled + .box{background:#fff;border-color:#fff}
   input:checked + .box svg{opacity:1}
-  input:focus-visible + .box{outline:1.5px solid var(--gold);outline-offset:3px}
+  input:focus-visible + .box{outline:2px solid var(--ember);outline-offset:3px}
   .txt{display:flex;flex-direction:column;line-height:1.3}
-  .txt b{font-weight:500;font-size:16px}
-  .txt small{font-size:13.5px;font-weight:300;color:var(--ash);margin-top:3px}
-  input:checked ~ .txt b{text-decoration:line-through;text-decoration-color:var(--gold);text-decoration-thickness:1px;opacity:.5}
+  .txt b{font-weight:500;font-size:15.5px}
+  .txt small{font-size:13.5px;color:var(--mute);margin-top:3px}
+  input:checked:not(:disabled) ~ .txt b{text-decoration:line-through;text-decoration-color:var(--ember);opacity:.55}
+  input:checked:disabled ~ .txt b{color:var(--soft)}
   .meta{display:flex;align-items:center;gap:10px;flex:none;padding-right:2px}
-  .price{font-family:var(--display);font-style:italic;font-size:15px;color:var(--ash);font-variant-numeric:lining-nums}
-  .go{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;padding:0 12px;border:1px solid var(--line2);color:var(--gold);text-decoration:none;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s}
-  .go:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+  .price{font-size:14px;color:var(--mute);font-variant-numeric:tabular-nums}
+  .go{display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:44px;padding:0 14px;border-radius:999px;border:1px solid var(--line2);color:var(--text);text-decoration:none;font-weight:600;font-size:13px;transition:background .2s,color .2s,border-color .2s}
+  .go:hover{background:#fff;color:#000;border-color:#fff}
+  .got{font-size:12.5px;font-weight:600;color:var(--ember);white-space:nowrap}
 
   /* menu */
-  .course{background:var(--velvet);border:1px solid var(--line);padding:22px 18px 6px;text-align:center}
-  .course h3{margin-bottom:6px}
-  .course h3::after{content:"";display:block;width:28px;height:1px;background:var(--oxblood);margin:12px auto 0}
-  .dish{display:block;text-decoration:none;color:var(--bone);padding:14px 4px;border-top:1px solid var(--line);min-height:56px}
-  .course h3 + .dish{border-top:0}
-  .dish b{display:block;position:relative;padding:0 20px;font-family:var(--display);font-size:19px;font-weight:400;line-height:1.2;color:var(--bone)}
-  .dish b i{position:absolute;right:0;top:3px;font-style:normal;font-family:var(--body);color:var(--gold);font-size:13px}
-  .dish span{display:block;font-size:14.5px;font-weight:300;color:var(--ash);margin-top:4px}
-  .dish .tip{display:inline-block;margin-top:8px;font-family:var(--display);font-style:italic;font-size:13.5px;color:var(--rose)}
-  .dish:hover b{color:var(--gold)}
+  .course{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 18px 8px;text-align:center}
+  .course h3{margin-bottom:4px}
+  .course .cnote{display:block;font-size:13px;color:var(--mute);margin:0 0 4px}
+  .course h3 + .cnote + .dish, .course h3 + .dish{border-top:0}
+  .course .rule{width:28px;height:2px;border-radius:2px;background:var(--blood);margin:10px auto 6px}
+  .dish{display:block;text-decoration:none;color:var(--text);padding:14px 4px;border-top:1px solid var(--line)}
+  .course .rule + .dish{border-top:0}
+  .dish b{display:block;font-family:var(--display);font-size:21px;font-weight:400;line-height:1.15}
+  .dish b i{font-style:normal;font-family:var(--body);color:var(--ember);font-size:13px;margin-left:4px;vertical-align:2px}
+  .dish .real{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ember);margin-top:5px}
+  .dish span:not(.real){display:block;font-size:14.5px;color:var(--mute);margin-top:4px}
+  a.dish:hover b{color:var(--ember)}
 
   /* timeline */
-  .phase{background:var(--velvet);border:1px solid var(--line);padding:18px 14px 6px;position:relative}
-  .phase .when-tag{display:block;font-family:var(--display);font-style:italic;font-size:21px;color:var(--gold);padding:0 4px 12px;margin-bottom:2px;border-bottom:1px solid var(--oxblood)}
+  .phase{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 14px 6px}
+  .phase.done{background:rgba(255,255,255,.035)}
+  .phase .when-tag{display:block;font-family:var(--display);font-size:24px;line-height:1.1;padding:0 4px 12px;margin-bottom:2px;border-bottom:1px solid rgba(154,34,34,.7)}
+  .phase .slot{display:block;padding:14px 4px 2px;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ember)}
+  .phase .slot + ul.check li:first-child{border-top:0}
 
-  footer{max-width:1080px;margin:0 auto;padding:22px 18px 56px;font-size:13px;font-weight:300;color:var(--ash);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;border-top:1px solid var(--line)}
-  footer button{font:inherit;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase;min-height:44px;padding:0 16px;border:1px solid var(--line2);background:transparent;color:var(--bone);cursor:pointer}
-  footer button:hover{border-color:var(--gold);color:var(--gold)}
-  @media print{body::before,nav,.bats,.flame,.go,.swap,footer button{display:none}.hero{background:#fff;color:#000}.hero h1,.hero h1 span{color:#000}body{background:#fff;color:#000}.card,.group,.course,.phase,.theme{background:#fff;color:#000}}
+  footer{max-width:1080px;margin:0 auto;padding:22px 18px 56px;font-size:13.5px;color:var(--mute);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;border-top:1px solid var(--line)}
+  footer button{font:600 13px var(--body);min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--text);cursor:pointer}
+  footer button:hover{background:#fff;color:#000}
+  @media print{.ghosts,nav,.go,.swap,footer button,.actions{display:none}body::before{display:none}body,html{background:#fff;color:#000}}
 </style>
 </head>
 <body>
 
+<div class="ghosts" aria-hidden="true">
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="wisp" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+        <stop offset=".55" stop-color="#fff" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#fff" stop-opacity=".95"/>
+      </linearGradient>
+      <symbol id="ghost" viewBox="0 0 220 70">
+        <path fill="url(#wisp)" d="M206 30c0-14-11-22-24-20-30 4-62 10-96 16-30 5-56 8-86 7 24 9 54 16 84 18 34 2 66 3 96 2 15 0 26-8 26-23z"/>
+        <ellipse cx="186" cy="25" rx="2.6" ry="3.4" fill="#2a0a0a" opacity=".45"/>
+        <ellipse cx="196" cy="26" rx="2.4" ry="3.2" fill="#2a0a0a" opacity=".45"/>
+      </symbol>
+    </defs>
+  </svg>
+  <div class="g"          style="--y:12vh;--w:clamp(150px,22vw,300px);--o:.20;--d:34s;--dl:-6s"><svg viewBox="0 0 220 70"><use href="#ghost"/></svg></div>
+  <div class="g r"        style="--y:46vh;--w:clamp(120px,16vw,230px);--o:.14;--d:42s;--dl:-22s"><svg viewBox="0 0 220 70"><use href="#ghost"/></svg></div>
+  <div class="g"          style="--y:74vh;--w:clamp(110px,15vw,210px);--o:.16;--d:38s;--dl:-30s"><svg viewBox="0 0 220 70"><use href="#ghost"/></svg></div>
+  <div class="g lg-only"  style="--y:28vh;--w:160px;--o:.11;--d:52s;--dl:-40s"><svg viewBox="0 0 220 70"><use href="#ghost"/></svg></div>
+  <div class="g r lg-only" style="--y:86vh;--w:190px;--o:.12;--d:46s;--dl:-10s"><svg viewBox="0 0 220 70"><use href="#ghost"/></svg></div>
+</div>
+
 <header class="hero">
-  <div class="hero-in">
-    <p class="eyebrow">Halloween party plan</p>
-    <div class="flame" aria-hidden="true"></div>
-    <svg class="bats" viewBox="0 0 220 120" aria-hidden="true">
-      <path d="M60 40c6-10 18-12 22-6 2-6 6-8 8-4 2-4 6-2 8 4 4-6 16-4 22 6-10-2-16 2-18 8-4-4-8-4-12 0-4-4-8-4-12 0-2-6-8-10-18-8z"/>
-      <path class="b2" d="M140 74c4-7 12-8 15-4 1-4 4-5 5-3 1-3 4-1 5 3 3-4 11-3 15 4-7-1-11 1-12 5-3-3-5-3-8 0-3-3-5-3-8 0-1-4-5-6-12-5z"/>
-      <path d="M24 92c3-5 8-6 10-3 1-3 3-3 4-2 1-2 3-1 4 2 2-3 7-2 10 3-5-1-7 1-8 4-2-2-4-2-6 0-2-2-4-2-6 0-1-3-4-5-8-4z"/>
-    </svg>
-    <h1>Dead of<span>Night</span></h1>
-    <div class="when">
-      <span class="pill">Sat · Oct 31, 2026</span>
-      <span class="pill ghost" id="countdown">Countdown</span>
-    </div>
-    <a class="swap" href="../">Pink version →</a>
+  <p class="eyebrow">Halloween party plan</p>
+  <h1>Haunted Manor</h1>
+  <p class="sub">Costume Contest ✨👻</p>
+  <p class="date">Saturday, Oct 31</p>
+  <p class="time">7:00pm ET</p>
+  <p class="blurb">A night of spooky drinks, yummy eats and costumes of every kind. Best costume takes home a prize 🏆</p>
+  <div class="actions">
+    <a class="btn solid" href="https://partiful.com/e/dgiCIouSedk6GWBZKqMV?c=nUth4Am4" target="_blank" rel="noopener">RSVP on Partiful ↗</a>
+    <span class="btn line" id="countdown">Countdown</span>
   </div>
+  <a class="swap" href="../">Pink version →</a>
 </header>
-<div class="ornament" aria-hidden="true"><i></i></div>
+
+<div class="stage" aria-label="Where planning stands">
+  <ol>
+    <li><i>✓</i>Theme picked</li>
+    <li><i>✓</i>Invites sent</li>
+    <li><i>✓</i>Decor ordered</li>
+    <li class="next"><i>→</i>Next up: food</li>
+  </ol>
+</div>
 
 <nav aria-label="Sections">
   <ul>
-    <li><a href="#themes">Themes</a></li>
-    <li><a href="#ideas">Ideas</a></li>
-    <li><a href="#shop">Shopping</a></li>
+    <li><a href="#theme">Theme</a></li>
+    <li><a href="#contest">Contest</a></li>
     <li><a href="#menu">Menu</a></li>
     <li><a href="#prep">Prep plan</a></li>
+    <li><a href="#shop">Shopping</a></li>
+    <li><a href="#ideas">Ideas</a></li>
   </ul>
 </nav>
 
 <main>
 
-  <!-- THEMES -->
-  <section id="themes">
-    <div class="sec-head"><h2>Pick a <em>theme</em></h2></div>
-    <div class="grid themes">
-      <div class="theme"><b>Haunted Manor</b><p>Dust sheets over the furniture, cobwebbed candelabras, crooked portraits, fog rolling across the floor.</p></div>
-      <div class="theme"><b>Abandoned Carnival</b><p>Flickering bulbs, a rusted ticket booth, creepy clowns, and caramel apples nobody should trust.</p></div>
-      <div class="theme"><b>Witches’ Coven</b><p>Bubbling cauldron punch, potion bottles, dried herbs, black candles, and pointed hats required.</p></div>
-      <div class="theme"><b>Victorian Séance</b><p>Mourning black, lace veils, a candlelit table, and a spirit board for midnight — the one pink touch: faded roses.</p></div>
-      <div class="theme"><b>Graveyard Shift</b><p>Tombstones by the door, a skeleton bartender, moss, bones, and a dirt-cup dessert bar.</p></div>
+  <!-- THEME -->
+  <section id="theme">
+    <div class="sec-head"><h2>The <em>theme</em></h2></div>
+    <div class="feature">
+      <span class="big">Haunted Manor</span>
+      <p>Dust sheets over the furniture, cobwebbed candelabras, crooked portraits, fog rolling across the floor.</p>
+      <a class="btn solid" href="https://partiful.com/e/dgiCIouSedk6GWBZKqMV?c=nUth4Am4" target="_blank" rel="noopener">RSVP on Partiful ↗</a>
     </div>
   </section>
 
+  <!-- CONTEST -->
+  <section id="contest">
+    <div class="sec-head"><h2>Costume <em>contest</em></h2></div>
+    <div class="feature">
+      <span class="trophy" aria-hidden="true">🏆</span>
+      <span class="big">Best costume wins a prize</span>
+      <p>Costumes of every kind welcome. Crowning categories:</p>
+      <div class="chips"><span class="chip">Scariest</span><span class="chip">Most cursed</span><span class="chip">Best duo</span></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="sec-head"><h2>The <em>menu</em></h2></div>
+    <p class="note">Chinese takeout does the heavy lifting; a few homemade snacks and a spooky bar round it out.</p>
+    <div class="grid three">
+      <div class="course">
+        <h3>The Chinese order</h3>
+        <span class="cnote">Placed ~5 PM for ~6:30 pickup or delivery</span>
+        <div class="rule"></div>
+        <div class="dish"><b>Haunted Potstickers</b><span class="real">Pork &amp; chive dumplings</span><span>Pan-fried, with crisp golden bottoms.</span></div>
+        <div class="dish"><b>Bat Wings</b><span class="real">Salt &amp; pepper wings</span><span>Crackly, peppery, a little chili heat.</span></div>
+        <div class="dish"><b>Mummy Rolls</b><span class="real">Veggie spring rolls</span><span>Tightly wrapped, fried crisp.</span></div>
+        <div class="dish"><b>Roast Pork Buns</b><span>Fluffy steamed buns with sweet char siu.</span></div>
+        <div class="dish"><b>Worm Nest</b><span class="real">Cold sesame noodles</span><span>Nutty and slurpable — fine at room temp.</span></div>
+        <div class="dish"><b>Pumpkin Chicken</b><span class="real">Orange chicken</span><span>Glossy, sweet-tangy, crowd favorite.</span></div>
+        <div class="dish"><b>Dry-Fried Garlic Green Beans</b><span>Blistered and garlicky — the one green thing.</span></div>
+      </div>
+      <div class="course">
+        <h3>Homemade snacks</h3>
+        <div class="rule"></div>
+        <div class="dish"><b>Marbled Tea Eggs</b><span>Soy-and-tea marinated; the cracked shells leave spiderwebs.</span></div>
+        <div class="dish"><b>Black Charcuterie Board</b><span>Blackberries, figs, black grapes, prosciutto, aged cheese.</span></div>
+        <div class="dish"><b>Mummy Brie</b><span>Brie wrapped in puff-pastry bandages, baked warm.</span></div>
+        <div class="dish"><b>Fortunes of Doom</b><span>Chocolate-dipped fortune cookies hiding spooky fortunes.</span></div>
+        <div class="dish"><b>Black Candy Apples</b><span>A glossy black shell — poison-apple energy.</span></div>
+      </div>
+      <div class="course">
+        <h3>Drinks</h3>
+        <div class="rule"></div>
+        <div class="dish"><b>Lychee “Eyeball” Martinis</b><span>A lychee stuffed with a blueberry, staring back from the glass.</span></div>
+        <a class="dish" href="https://www.marthastewart.com/332824/pomegranate-champagne-punch" target="_blank" rel="noopener"><b>Pomegranate-Champagne Punch<i>↗</i></b><span>Pomegranate, pear nectar, bubbly — blood red.</span></a>
+        <div class="dish"><b>Blood-Orange Margaritas</b><span>One big batch, ready to pour.</span></div>
+        <a class="dish" href="https://www.marthastewart.com/1163215/blood-moon-punch" target="_blank" rel="noopener"><b>Blood-Moon Punch<i>↗</i></b><span>Zero-proof: grape juice, ginger soda, a frozen OJ “moon.”</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREP -->
+  <section id="prep">
+    <div class="sec-head"><h2>Prep <em>plan</em></h2><span class="count" data-total="prep">0 / 0</span></div>
+    <div class="grid two">
+      <div class="grid">
+        <div class="phase done" data-group>
+          <span class="when-tag">Done ✓</span>
+          <ul class="check">
+            <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pick the theme</b><small>Haunted Manor</small></span></label></li>
+            <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Send invites</b><small>Via Partiful</small></span></label></li>
+            <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Order decorations</b><small>Amazon — decor + tableware</small></span></label></li>
+          </ul>
+        </div>
+        <div class="phase" data-group>
+          <span class="when-tag">This week</span>
+          <ul class="check">
+            <li><label><input type="checkbox" data-k="split"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Split who makes what</b></span></label></li>
+            <li><label><input type="checkbox" data-k="playlist"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Build the playlist</b></span></label></li>
+            <li><label><input type="checkbox" data-k="fortunes"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Write 12+ spooky fortunes</b><small>For the Fortunes of Doom</small></span></label></li>
+          </ul>
+        </div>
+        <div class="phase" data-group>
+          <span class="when-tag">Fri · Oct 30</span>
+          <ul class="check">
+            <li><label><input type="checkbox" data-k="groceries"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Grocery run + ice</b></span></label></li>
+            <li><label><input type="checkbox" data-k="teaeggs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Make the tea eggs</b><small>Marinate overnight</small></span></label></li>
+            <li><label><input type="checkbox" data-k="moon"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Freeze the Blood-Moon dome</b><small>Needs ~8 hrs</small></span></label></li>
+            <li><label><input type="checkbox" data-k="decor"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Hang bats, webs, creepy cloth</b><small>Swap in the flame bulbs</small></span></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="phase" data-group>
+        <span class="when-tag">Sat · Oct 31</span>
+        <span class="slot">Afternoon</span>
+        <ul class="check">
+          <li><label><input type="checkbox" data-k="dip"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Dip the fortune cookies</b></span></label></li>
+          <li><label><input type="checkbox" data-k="apples"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Make the candy apples</b></span></label></li>
+          <li><label><input type="checkbox" data-k="board"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Build the charcuterie board</b></span></label></li>
+        </ul>
+        <span class="slot">~5 PM</span>
+        <ul class="check">
+          <li><label><input type="checkbox" data-k="order"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Place the Chinese order</b><small>For ~6:30 pickup or delivery</small></span></label></li>
+        </ul>
+        <span class="slot">1 hr out</span>
+        <ul class="check">
+          <li><label><input type="checkbox" data-k="brie"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Bake the mummy brie</b></span></label></li>
+          <li><label><input type="checkbox" data-k="margs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Batch the margaritas</b></span></label></li>
+        </ul>
+        <span class="slot">Go time</span>
+        <ul class="check">
+          <li><label><input type="checkbox" data-k="punch"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Mix the punches</b></span></label></li>
+          <li><label><input type="checkbox" data-k="fog"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Fog on</b></span></label></li>
+          <li><label><input type="checkbox" data-k="candles"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Light the candles</b></span></label></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOPPING -->
+  <section id="shop">
+    <div class="sec-head"><h2>Shopping <em>list</em></h2><span class="count" data-total="shop">0 / 0</span></div>
+    <p class="note">Decor and tableware are ordered on Amazon ✓. Drinks + bar and favors are still open.</p>
+    <div class="grid two">
+      <div class="grid">
+<div class="group ordered" data-group>
+  <h3>Decor <span class="badge">Ordered ✓</span></h3>
+  <ul class="check">
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black 3D wall bats</b><small>120 pcs, 4 sizes</small></span></label><span class="meta"><span class="price">~$8</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Stretchy white spider webs</b><small>1000 sq ft + 30 fake spiders</small></span></label><span class="meta"><span class="price">~$14</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black creepy cloth</b><small>6-pack, 30 × 72 in — drape everything</small></span></label><span class="meta"><span class="price">~$10</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Posable life-size skeleton</b><small>5.4 ft, movable joints</small></span></label><span class="meta"><span class="price">~$37</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Fog machine</b><small>600W, 12-color lights, remote</small></span></label><span class="meta"><span class="price">~$47</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black flameless taper candles</b><small>Battery, flicker, remote + timer</small></span></label><span class="meta"><span class="price">~$18</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Flickering flame light bulbs</b><small>4-pack, E26 base</small></span></label><span class="meta"><span class="price">~$26</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Large velvet pumpkins</b><small>3 pcs — orange, gold, black</small></span></label><span class="meta"><span class="price">~$46</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black + orange balloon arch kit</b><small>135 pcs</small></span></label><span class="meta"><span class="price">~$10</span></span></li>
+  </ul>
+</div>
+<div class="group ordered" data-group>
+  <h3>Tableware <span class="badge">Ordered ✓</span></h3>
+  <ul class="check">
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black plates + napkins</b><small>75 pcs, serves 25</small></span></label><span class="meta"><span class="price">~$10</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black spiderweb napkins</b><small>50-pack</small></span></label><span class="meta"><span class="price">~$10</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Skeleton party cups</b><small>30-pack, 16 oz</small></span></label><span class="meta"><span class="price">~$18</span></span></li>
+    <li><label><input type="checkbox" checked disabled data-done><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black + orange snack cups</b><small>50 pcs, 9 oz — for dips + sweets</small></span></label><span class="meta"><span class="price">~$14</span></span></li>
+  </ul>
+</div>
+      </div>
+      <div class="grid">
+<div class="group" data-group>
+  <h3>Drinks + bar <span class="count"></span></h3>
+  <ul class="check">
+    <li><label><input type="checkbox" data-k="s-dispenser"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Punch dispenser with ice cone</b><small>Buddeez, 3.5 gal, clear</small></span></label><span class="meta"><span class="price">~$60</span><a class="go" href="https://www.amazon.com/dp/B072352RB2" target="_blank" rel="noopener" aria-label="Drink dispenser on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-picks"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Ghost + bat cocktail picks</b><small>120 pcs, bamboo</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0DBVYP3Y8" target="_blank" rel="noopener" aria-label="Cocktail picks on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-stirrers"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Bat swizzle sticks</b><small>30 pcs</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0D5CP41NR" target="_blank" rel="noopener" aria-label="Bat swizzle sticks on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-straws"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black bat straws</b><small>60 pcs</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0D9K34M9G" target="_blank" rel="noopener" aria-label="Bat straws on Amazon">Buy ↗</a></span></li>
+  </ul>
+</div>
+<div class="group" data-group>
+  <h3>Favors + games <span class="count"></span></h3>
+  <ul class="check">
+    <li><label><input type="checkbox" data-k="s-bags"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Orange + black treat bags</b><small>60 pcs, with handles</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0FJLVFGNM" target="_blank" rel="noopener" aria-label="Treat bags on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-eyeballs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Gummy eyeballs</b><small>30, individually wrapped</small></span></label><span class="meta"><span class="price">~$15</span><a class="go" href="https://www.amazon.com/dp/B0BF7CPVPB" target="_blank" rel="noopener" aria-label="Gummy eyeballs on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-glow"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Orange glow sticks</b><small>100-pack, with connectors</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0CKW2K1HK" target="_blank" rel="noopener" aria-label="Glow sticks on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-trivia"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Horror trivia card game</b><small>300 questions</small></span></label><span class="meta"><span class="price">~$11</span><a class="go" href="https://www.amazon.com/dp/B07JVF73RY" target="_blank" rel="noopener" aria-label="Horror trivia on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-eyeball"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pin the Eyeball on the Zombie</b><small>Beistle</small></span></label><span class="meta"><span class="price">~$5</span><a class="go" href="https://www.amazon.com/dp/B075DH4QH4" target="_blank" rel="noopener" aria-label="Pin the eyeball game on Amazon">Buy ↗</a></span></li>
+    <li><label><input type="checkbox" data-k="s-poison"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pick Your Poison: After Dark</b><small>Adults “would you rather” cards</small></span></label><span class="meta"><span class="price">~$25</span><a class="go" href="https://www.amazon.com/dp/B07146ZQPP" target="_blank" rel="noopener" aria-label="Pick Your Poison on Amazon">Buy ↗</a></span></li>
+  </ul>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAS -->
   <!-- IDEAS -->
   <section id="ideas">
     <div class="sec-head"><h2>Ideas <em>board</em></h2></div>
@@ -224,7 +434,6 @@
         <h3>Games + activities</h3>
         <ul class="dots">
           <li>Pumpkin carving bar — black, orange, bone paint for no-carve</li>
-          <li>Costume contest: scariest, most cursed, best duo</li>
           <li>Horror trivia face-off in teams</li>
           <li>Pin the eyeball on the zombie (blindfolded)</li>
           <li>Lights-out ghost story at midnight</li>
@@ -256,165 +465,43 @@
     </div>
   </section>
 
-  <!-- SHOPPING -->
-  <section id="shop">
-    <div class="sec-head"><h2>Shopping <em>list</em></h2><span class="count" data-total="shop">0 / 0</span></div>
-    <p class="note">All on Amazon. Checked Oct 21: in stock, showing free delivery Mon Oct 26 – Wed Oct 28 (free shipping over $35). Prices may change.</p>
-    <div class="grid two">
-      <div class="grid">
-<div class="group" data-group>
-  <h3>Decor <span class="count"></span></h3>
-  <ul class="check">
-    <li><label><input type="checkbox" data-k="s-bats"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black 3D wall bats</b><small>120 pcs, 4 sizes</small></span></label><span class="meta"><span class="price">~$8</span><a class="go" href="https://www.amazon.com/dp/B089M9KVFS" target="_blank" rel="noopener" aria-label="Wall bats on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-webs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Stretchy white spider webs</b><small>1000 sq ft + 30 fake spiders</small></span></label><span class="meta"><span class="price">~$14</span><a class="go" href="https://www.amazon.com/dp/B07HMRZSWT" target="_blank" rel="noopener" aria-label="Spider webs on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-cloth"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black creepy cloth</b><small>6-pack, 30 × 72 in — drape everything</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B09C1PVZY3" target="_blank" rel="noopener" aria-label="Creepy cloth on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-skeleton"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Posable life-size skeleton</b><small>5.4 ft, movable joints</small></span></label><span class="meta"><span class="price">~$37</span><a class="go" href="https://www.amazon.com/dp/B0FHFSPG4P" target="_blank" rel="noopener" aria-label="Skeleton on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-fog"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Fog machine</b><small>600W, 12-color lights, remote</small></span></label><span class="meta"><span class="price">~$47</span><a class="go" href="https://www.amazon.com/dp/B07T28NQKX" target="_blank" rel="noopener" aria-label="Fog machine on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-candles"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black flameless taper candles</b><small>Battery, flicker, remote + timer</small></span></label><span class="meta"><span class="price">~$18</span><a class="go" href="https://www.amazon.com/dp/B0C5HXXFQD" target="_blank" rel="noopener" aria-label="Taper candles on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-bulbs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Flickering flame light bulbs</b><small>4-pack, E26 base</small></span></label><span class="meta"><span class="price">~$26</span><a class="go" href="https://www.amazon.com/dp/B07MB2KZNF" target="_blank" rel="noopener" aria-label="Flame light bulbs on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-pumpkins"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Large velvet pumpkins</b><small>3 pcs — orange, gold, black</small></span></label><span class="meta"><span class="price">~$46</span><a class="go" href="https://www.amazon.com/dp/B0H87X7P15" target="_blank" rel="noopener" aria-label="Velvet pumpkins on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-balloons"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black + orange balloon arch kit</b><small>135 pcs</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0CGVHB7YV" target="_blank" rel="noopener" aria-label="Balloon arch kit on Amazon">Buy ↗</a></span></li>
-  </ul>
-</div>
-<div class="group" data-group>
-  <h3>Tableware <span class="count"></span></h3>
-  <ul class="check">
-    <li><label><input type="checkbox" data-k="s-plates"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black plates + napkins</b><small>75 pcs, serves 25</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0H994QMDK" target="_blank" rel="noopener" aria-label="Plates and napkins on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-napkins"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black spiderweb napkins</b><small>50-pack</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0H9QML63X" target="_blank" rel="noopener" aria-label="Spiderweb napkins on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-cups"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Skeleton party cups</b><small>30-pack, 16 oz</small></span></label><span class="meta"><span class="price">~$18</span><a class="go" href="https://www.amazon.com/dp/B0DDT6WQP8" target="_blank" rel="noopener" aria-label="Skeleton cups on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-snackcups"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black + orange snack cups</b><small>50 pcs, 9 oz — for dips + sweets</small></span></label><span class="meta"><span class="price">~$14</span><a class="go" href="https://www.amazon.com/dp/B0H45VQ6YC" target="_blank" rel="noopener" aria-label="Snack cups on Amazon">Buy ↗</a></span></li>
-  </ul>
-</div>
-      </div>
-      <div class="grid">
-<div class="group" data-group>
-  <h3>Drinks + bar <span class="count"></span></h3>
-  <ul class="check">
-    <li><label><input type="checkbox" data-k="s-dispenser"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Punch dispenser with ice cone</b><small>Buddeez, 3.5 gal, clear</small></span></label><span class="meta"><span class="price">~$60</span><a class="go" href="https://www.amazon.com/dp/B072352RB2" target="_blank" rel="noopener" aria-label="Drink dispenser on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-picks"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Ghost + bat cocktail picks</b><small>120 pcs, bamboo</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0DBVYP3Y8" target="_blank" rel="noopener" aria-label="Cocktail picks on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-stirrers"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Bat swizzle sticks</b><small>30 pcs</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0D5CP41NR" target="_blank" rel="noopener" aria-label="Bat swizzle sticks on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-straws"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Black bat straws</b><small>60 pcs</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0D9K34M9G" target="_blank" rel="noopener" aria-label="Bat straws on Amazon">Buy ↗</a></span></li>
-  </ul>
-</div>
-<div class="group" data-group>
-  <h3>Favors + games <span class="count"></span></h3>
-  <ul class="check">
-    <li><label><input type="checkbox" data-k="s-bags"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Orange + black treat bags</b><small>60 pcs, with handles</small></span></label><span class="meta"><span class="price">~$10</span><a class="go" href="https://www.amazon.com/dp/B0FJLVFGNM" target="_blank" rel="noopener" aria-label="Treat bags on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-eyeballs"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Gummy eyeballs</b><small>30, individually wrapped</small></span></label><span class="meta"><span class="price">~$15</span><a class="go" href="https://www.amazon.com/dp/B0BF7CPVPB" target="_blank" rel="noopener" aria-label="Gummy eyeballs on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-glow"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Orange glow sticks</b><small>100-pack, with connectors</small></span></label><span class="meta"><span class="price">~$9</span><a class="go" href="https://www.amazon.com/dp/B0CKW2K1HK" target="_blank" rel="noopener" aria-label="Glow sticks on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-trivia"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Horror trivia card game</b><small>300 questions</small></span></label><span class="meta"><span class="price">~$11</span><a class="go" href="https://www.amazon.com/dp/B07JVF73RY" target="_blank" rel="noopener" aria-label="Horror trivia on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-eyeball"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pin the Eyeball on the Zombie</b><small>Beistle</small></span></label><span class="meta"><span class="price">~$5</span><a class="go" href="https://www.amazon.com/dp/B075DH4QH4" target="_blank" rel="noopener" aria-label="Pin the eyeball game on Amazon">Buy ↗</a></span></li>
-    <li><label><input type="checkbox" data-k="s-poison"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pick Your Poison: After Dark</b><small>Adults “would you rather” cards</small></span></label><span class="meta"><span class="price">~$25</span><a class="go" href="https://www.amazon.com/dp/B07146ZQPP" target="_blank" rel="noopener" aria-label="Pick Your Poison on Amazon">Buy ↗</a></span></li>
-  </ul>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MENU -->
-  <section id="menu">
-    <div class="sec-head"><h2>The <em>menu</em></h2></div>
-    <p class="note">Every dish is a Martha Stewart recipe — tap to open it.</p>
-    <div class="grid three">
-      <div class="course">
-        <h3>Drinks</h3>
-        <a class="dish" href="https://www.marthastewart.com/316230/rose-wine-punch" target="_blank" rel="noopener"><b>Rosé Wine Punch <i>↗</i></b><span>Dry rosé, stone fruit, raspberries.</span><em class="tip">blush-pink — our one pink note</em></a>
-        <a class="dish" href="https://www.marthastewart.com/332824/pomegranate-champagne-punch" target="_blank" rel="noopener"><b>Pomegranate-Champagne Punch <i>↗</i></b><span>Pomegranate juice, pear nectar, bubbly.</span><em class="tip">blood red</em></a>
-        <a class="dish" href="https://www.marthastewart.com/1163215/blood-moon-punch" target="_blank" rel="noopener"><b>Blood-Moon Punch <i>↗</i></b><span>Zero-proof: grape juice, ginger soda, a frozen OJ “moon.”</span></a>
-        <a class="dish" href="https://www.marthastewart.com/317697/shrunken-heads-in-cider" target="_blank" rel="noopener"><b>Shrunken Heads in Cider <i>↗</i></b><span>Carved, dried apple “heads” floating in cider punch.</span></a>
-      </div>
-      <div class="course">
-        <h3>Savory bites</h3>
-        <a class="dish" href="https://www.marthastewart.com/859149/deviled-eggs" target="_blank" rel="noopener"><b>Devilish Deviled Eggs <i>↗</i></b><span>Spicy roasted-red-pepper filling, poppy seeds.</span></a>
-        <a class="dish" href="https://www.marthastewart.com/336894/devils-on-horseback" target="_blank" rel="noopener"><b>Bacon-Wrapped Prunes <i>↗</i></b><span>Two ingredients. Also called devils on horseback.</span></a>
-        <a class="dish" href="https://www.marthastewart.com/1554733/jalapeno-popper-dip" target="_blank" rel="noopener"><b>Jalapeño Popper Dip <i>↗</i></b><span>Creamy, cheesy, roasted jalapeños.</span></a>
-        <a class="dish" href="https://www.marthastewart.com/1551291/warm-black-and-blue-cheese-dip" target="_blank" rel="noopener"><b>Warm Black-and-Blue Cheese Dip <i>↗</i></b><span>Baked blue cheese dip with dried-fruit “bugs.”</span></a>
-      </div>
-      <div class="course">
-        <h3>Sweets</h3>
-        <a class="dish" href="https://www.marthastewart.com/312560/bat-and-cobweb-cookies" target="_blank" rel="noopener"><b>Bat and Cobweb Cookies <i>↗</i></b><span>Spiced gingerbread cutouts, lemony royal icing.</span><em class="tip">pipe webs in black + bone</em></a>
-        <a class="dish" href="https://www.marthastewart.com/856109/broken-glass-cupcakes" target="_blank" rel="noopener"><b>“Broken Glass” Cupcakes <i>↗</i></b><span>Topped with shards of clear sugar “glass.”</span></a>
-        <a class="dish" href="https://www.marthastewart.com/356454/no-bake-spiderweb-cheesecake" target="_blank" rel="noopener"><b>No-Bake Spiderweb Cheesecake <i>↗</i></b><span>Chocolate-wafer crust, chocolate web, candy spiders.</span></a>
-        <a class="dish" href="https://www.marthastewart.com/338890/candy-apples" target="_blank" rel="noopener"><b>Candy Apples <i>↗</i></b><span>The classic glossy shell.</span><em class="tip">swap red for black gel = poison apples</em></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PREP -->
-  <section id="prep">
-    <div class="sec-head"><h2>Prep <em>plan</em></h2><span class="count" data-total="prep">0 / 0</span></div>
-    <div class="grid three">
-      <div class="phase" data-group>
-        <span class="when-tag">This week · by Oct 24</span>
-        <ul class="check">
-          <li><label><input type="checkbox" data-k="p-theme"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Pick the theme + send invites</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-order"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Place the Amazon order</b><small>Order early so it lands Oct 26–27</small></span></label></li>
-          <li><label><input type="checkbox" data-k="p-split"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Split the menu between hosts</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-playlist"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Build the playlist</b></span></label></li>
-        </ul>
-      </div>
-      <div class="phase" data-group>
-        <span class="when-tag">Fri · Oct 30</span>
-        <ul class="check">
-          <li><label><input type="checkbox" data-k="p-groceries"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Grocery run + ice</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-moon"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Freeze the Blood-Moon dome</b><small>Recipe needs ~8 hrs</small></span></label></li>
-          <li><label><input type="checkbox" data-k="p-cookies"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Bake + ice the cookies</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-cheesecake"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Make + chill the cheesecake</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-decor"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Hang bats, webs, creepy cloth; swap in flame bulbs</b></span></label></li>
-        </ul>
-      </div>
-      <div class="phase" data-group>
-        <span class="when-tag">Sat · Oct 31</span>
-        <ul class="check">
-          <li><label><input type="checkbox" data-k="p-heads"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Morning: carve + dry apple heads</b><small>Recipe takes ~3 hrs</small></span></label></li>
-          <li><label><input type="checkbox" data-k="p-balloons"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Balloon arch, pose the skeleton, test the fog</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-bake"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>Afternoon: cupcakes, candy apples, eggs</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-dips"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>1 hr out: bake dips, wrap prunes</b></span></label></li>
-          <li><label><input type="checkbox" data-k="p-punch"><span class="box"><svg viewBox="0 0 16 16" fill="none" stroke-width="2.6"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="txt"><b>At go time: mix punches, light candles</b></span></label></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer>
   <span>Checkmarks save on this device.</span>
-  <button type="button" id="reset">Clear all checkmarks</button>
+  <button type="button" id="reset">Clear my checkmarks</button>
 </footer>
 
 <script>
 (function(){
-  var KEY='dead-of-night-v1', st={};
+  var KEY='haunted-manor-v1', st={};
   try{st=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
   var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox][data-k]'));
   function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
   function tally(){
     document.querySelectorAll('[data-group]').forEach(function(g){
-      var b=g.querySelectorAll('input[data-k]'),n=0;b.forEach(function(x){if(x.checked)n++});
+      var b=g.querySelectorAll('input[type=checkbox]'),n=0;b.forEach(function(x){if(x.checked)n++});
       var c=g.querySelector('h3 .count'); if(c) c.textContent=n+' / '+b.length;
     });
-    [['shop','#shop'],['prep','#prep']].forEach(function(p){
-      var b=document.querySelectorAll(p[1]+' input[data-k]'),n=0;b.forEach(function(x){if(x.checked)n++});
-      var label=p[0]==='shop'?' bought':' done';
-      document.querySelector('[data-total="'+p[0]+'"]').textContent=n+' / '+b.length+label;
+    [['shop','#shop',' bought'],['prep','#prep',' done']].forEach(function(p){
+      var b=document.querySelectorAll(p[1]+' input[type=checkbox]'),n=0;b.forEach(function(x){if(x.checked)n++});
+      document.querySelector('[data-total="'+p[0]+'"]').textContent=n+' / '+b.length+p[2];
     });
   }
   boxes.forEach(function(b){
     b.checked=!!st[b.dataset.k];
-    b.addEventListener('change',function(){st[b.dataset.k]=b.checked;if(!b.checked)delete st[b.dataset.k];save();tally()});
+    b.addEventListener('change',function(){if(b.checked)st[b.dataset.k]=true;else delete st[b.dataset.k];save();tally()});
   });
   document.getElementById('reset').addEventListener('click',function(){
     if(!confirm('Clear all checkmarks?'))return;
     st={};save();boxes.forEach(function(b){b.checked=false});tally();
   });
   tally();
-  // countdown
+  // countdown (party: Sat Oct 31, 7 PM)
   var party=new Date(2026,9,31), now=new Date(); now.setHours(0,0,0,0);
   var d=Math.round((party-now)/864e5), el=document.getElementById('countdown');
-  el.textContent = d>1 ? d+' days to go' : d===1 ? 'Tomorrow!' : d===0 ? 'Tonight!' : 'Hope it was a scream';
+  el.textContent = d>1 ? d+' days to go' : d===1 ? 'Tomorrow night' : d===0 ? 'Tonight' : 'Hope it was a scream';
 })();
 </script>
 </body>
 </html>
-
